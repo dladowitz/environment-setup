@@ -7,9 +7,9 @@
 [color]
   ui = true
 [color "branch"]
-  current = yellow black
-  local = yellow
-  remote = magenta
+  current = yellow bold
+  local = yellow black bold
+  remote = magenta bold
 [color "diff"]
   meta = yellow bold
   frag = magenta bold
@@ -17,7 +17,7 @@
   new = green reverse
   whitespace = white reverse
 [color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan reverse
-  branch = magenta
+  added = green bold
+  changed = red bold
+  untracked = cyan
+  branch = magenta bold
