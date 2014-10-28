@@ -9,6 +9,8 @@ alias be='bundle exec'
 ## Git
 alias gs='git status'
 alias gb='git branch'
+alias ga='git add'
+alias gcm='git commit -m'
 
 ## Rails
 alias rs='rails s'

@@ -1,23 +1,23 @@
 [user]
 	name = David Ladowitz
-	email = david@ladowitz.com
+    email = david@ladowitz.com
 [core]
-  quotepath = false
-  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    quotepath = false
+    whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [color]
-  ui = true
+    ui = true
 [color "branch"]
-  current = yellow bold
-  local = yellow black bold
-  remote = magenta bold
+    current = yellow bold
+    local = yellow black bold
+    remote = magenta bold
 [color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old = red reverse
-  new = green reverse
-  whitespace = white reverse
+    meta = yellow bold
+    frag = magenta bold
+    old = red reverse
+    new = green reverse
+    whitespace = white reverse
 [color "status"]
-  added = green bold
-  changed = red bold
-  untracked = cyan
-  branch = magenta bold
+    added = green bold
+    changed = red bold
+    untracked = cyan
+    branch = magenta bold
