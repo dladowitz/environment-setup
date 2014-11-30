@@ -15,11 +15,12 @@ alias gcm='git commit -m'
 ## Rails
 alias rs='rails s'
 alias rc='rails c'
-alias ls='ls -lFGh'
+alias ls='ls -alFGh'
 
 ## Directories
 alias cdre='cd ~/Documents/repos'
 alias cdcs='cd ~/Documents/repos/cat-sitter'
+alias cdnm='cd ~/Documents/repos/night-market'
 
 ## Prompt and Colors
 
