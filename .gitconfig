@@ -31,3 +31,7 @@
   type = cat-file -t
   dump = cat-file -p
 
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true

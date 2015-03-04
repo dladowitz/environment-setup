@@ -1,8 +1,19 @@
-
-[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
-
+## Path
+# originally from .profile
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+#originally from .bashrc
+export PATH="/usr/local/heroku/bin:$PATH" #Added by the Heroku Toolbelt
+export PATH="$HOME/bin:$PATH" # Added for personal scripts
+
 export PATH=/usr/local/git/bin:/usr/local/bin:$PATH
+
+# In case anything gets added to .profile or .bashrc in the future
+[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
+[[ -s "$HOME/.bashrc" ]] && source "$HOME/.bashrc" # Load the .bashrc
+
+
 
 alias be='bundle exec'
 
@@ -21,6 +32,9 @@ alias ls='ls -alFGh'
 alias cdre='cd ~/Documents/repos'
 alias cdcs='cd ~/Documents/repos/cat-sitter'
 alias cdnm='cd ~/Documents/repos/night-market'
+alias cdlcl='cd ~/Documents/repos/little-cat-labs'
+alias cdbewd8='cd ~/Documents/repos/general-assembly/bewd/bewd_sf_8/'
+alias cdbewd8h='cd ~/Documents/repos/general-assembly/bewd/bewd_sf_8_homework/'
 
 ## Prompt and Colors
 
@@ -99,12 +113,14 @@ On_IPurple='\033[105m'  # Purple
 On_ICyan='\033[106m'    # Cyan
 On_IWhite='\033[107m'   # White
 
-export PS1="${IBlue}\u: ${Cyan}\w ${Color_Off}\$ "
-
-
+# Line wrapping issue: https://code.google.com/p/iterm2/issues/detail?id=239
+# These two should be equivalent
+PS1='\[\033[94m\]\u: \[\033[36m\]\w \[\033[0m\]\$ '
+#export PS1="${IBlue}\u: ${Cyan}\w ${Color_Off}\$ "
 
 # Not sure what these did
 #export CLICOLOR=1
 #export LSCOLORS=ExFxBxDxCxegedabagacad
 #export LSCOLORS=ExGxFxdxCxDxDxaccxaeex
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
