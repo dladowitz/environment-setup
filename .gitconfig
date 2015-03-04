@@ -5,6 +5,7 @@
     quotepath = false
     whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
     excludesfile = ~/.gitignore_global
+	  editor = subl -n -w
 [color]
     ui = true
 [color "branch"]
@@ -35,3 +36,10 @@
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
 	required = true
+[merge]
+	tool = p4mergetool
+[mergetool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
+	trustExitCode = false
+[mergetool]
+	keepBackup = false
